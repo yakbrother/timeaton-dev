@@ -1,12 +1,27 @@
 {{ define "description" }}
-
+{{ .Page.Params.description }}
 {{ end }}
 
 {{ define "main" }}
 <article class="pt-2">
-    <h2>
-        > {{ .Title }}
-    </h2>
-    {{ .Content }}
+    <header>
+        <h2>
+            {{ if .Page.Params.link }}
+            <!-- TODO Get icon for link -->
+            <a href="{{ .Page.Params.link }}">
+                <i>↗</i> {{ .Page.Title }}
+            </a>
+            {{ else }}
+            <a href="{{ .Page.Permalink }}">
+                > {{ .Page.Title }}
+            </a>
+            {{ end }}
+        </h2>
+
+        <h4 class="text-gray-400">
+            {{ .Page.Date.Format "2006-01-02" }}
+        </h4>
+
+        {{ .Content }}
 </article>
 {{ end }}

@@ -29,6 +29,10 @@ sidebar li {
     font-weight: 700;
 }
 
+sidebar h1 {
+    letter-spacing: 3px;
+}
+
 sidebar li a {
     color: #666;
 }
@@ -85,4 +89,9 @@ article a {
 
 article a:visited {
     color: #C026D3;
+}
+
+blockquote {
+    border: 1px solid black;
+    padding: 6px;
 }
