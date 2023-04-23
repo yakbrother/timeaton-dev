@@ -23,8 +23,14 @@ li {
 h1,
 h2,
 h3,
-h4 {
+h4,
+sidebar li {
     font-family: 'Spline Sans Mono', monospace;
+    font-weight: 700;
+}
+
+sidebar li a {
+    color: #666;
 }
 
 a {
@@ -34,8 +40,49 @@ a {
 
 a:hover {
     color: #C026D3;
+    text-decoration: underline;
 }
 
 .front-layout {
     max-width: 900px;
+}
+
+article h1,
+sidebar h1 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 0.67em;
+}
+
+article h2,
+sidebar h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0.81em;
+}
+
+article h3,
+sidebar h3 {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+article p {
+    margin-top: .8em;
+}
+
+article ol,
+article ul {
+    margin-top: .8em;
+    margin-left: 1em;
+}
+
+article a {
+    color: #C026D3;
+}
+
+article a:visited {
+    color: #C026D3;
 }
