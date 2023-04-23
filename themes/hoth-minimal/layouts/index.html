@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article>
+    {{ .Content}}
+
+    <h2>Recent Posts:</h2>
+
+    {{ range first 10 .Pages.ByPublishDate.Reverse }}
+    <div>
+        <h3 class="font-bold"><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    </div>
+    {{ end }}
+
+</article>
+
+{{ end }}

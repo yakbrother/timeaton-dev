@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    background-color: white;
+    color: #666;
+}
+
+body {
+    background: url(/images/background.jpg) no-repeat center top fixed;
+    background-size: 100% auto;
+    margin: 0;
+}
+
+p,
+div,
+article,
+section,
+li {
+    font-family: 'Karla', sans-serif;
+    color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+a {
+    color: #C026D3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C026D3;
+}

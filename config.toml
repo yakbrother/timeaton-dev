@@ -1,0 +1,5 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Tim Eaton'
+themesDir = "themes"
+theme = "hoth-minimal"
