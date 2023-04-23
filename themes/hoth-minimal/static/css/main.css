@@ -1,11 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html,
 body {
     background-color: white;
     color: #666;
+    line-height: 1.5em;
 }
 
 body {
@@ -37,4 +34,8 @@ a {
 
 a:hover {
     color: #C026D3;
+}
+
+.front-layout {
+    max-width: 900px;
 }

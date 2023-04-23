@@ -9,7 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Spline+Sans+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = "Home" }}{{ end }}
     <title>{{ $title }}</title>
@@ -20,35 +21,35 @@
 </head>
 
 <body>
-    <div class="container wrapper flex justify-center py-24 ">
-        <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] lg:grid-cols-[2fr,1fr]
+    <container class="wrapper flex justify-center py-24 ">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr,2fr] lg:grid-cols-[1fr,2fr]
         front-layout gap-x-12 p-12">
-            {{- block "main" . }}{{- end }}
             <sidebar class="text-right">
                 <h1 class="text-gray-700 text-right font-bold">Tim Eaton</h1>
-                <h3 class="text-gray-700 text-right font-bold">Fullstack Developer</h3>
+                <h3 class="text-gray-700 text-right font-bold">Senior PHP Developer</h3>
 
                 <ul class="border-pink-500 border-t-4 pt-4">
                     <li><a href="#">Blog</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/hireme">Hire Me</a></li>
-                    <li><a href="/uses">Uses</a></li>
+                    <li><a href="/resume">Resume</a></li>
                 </ul>
 
-                <h3>..ooO</h3>
+                <hr />
+
                 <ul>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="mailto:tim@timeaton.dev">Email</a></li>
+                    <li><a href="https://github.com/yakbrother">Github</a></li>
+                    <li><a href="https://twitter.com/yakbrother">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/tim-eaton-pluies">LinkedIn</a></li>
                 </ul>
 
                 <ul>
                     <li><a href="/colophon">Colophon</a></li>
                 </ul>
             </sidebar>
-
+            {{- block "main" . }}{{- end }}
         </div>
-    </div>
+    </container>
     <footer class="align-middle">
         <h3 class="text-gray-400 font-bold align-middle">Copyright &copy; {{ now.Format "2006"}} Tim Eaton</h3>
     </footer>
