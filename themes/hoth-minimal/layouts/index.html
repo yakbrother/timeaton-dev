@@ -1,12 +1,12 @@
 {{ define "main" }}
-<article>
+<article class="pt-2">
     {{ .Content}}
 
     <h2>Recent Posts:</h2>
 
-    {{ range first 10 .Pages.ByPublishDate.Reverse }}
+    {{- range ( where site.RegularPages "Section" "posts" | first 3 ) }}
     <div>
-        <h3 class="font-bold"><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <h3 class="font-bold ml-6"><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></h3>
     </div>
     {{ end }}
 

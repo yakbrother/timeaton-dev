@@ -4,7 +4,8 @@
   "description": "Theme for www.yakdrive.io",
   "main": "index.js",
   "scripts": {
-    "build-tw": "npx tailwindcss -i ./static/css/main.css -o ./static/css/styles.css"
+    "build-tw": "npx tailwindcss -i ./static/css/main.css -o ./static/css/styles.css",
+    "watch-tw": "npx tailwindcss -i ./static/css/main.css -o ./static/css/styles.css --watch"
   },
   "keywords": [],
   "author": "Tim Eaton",

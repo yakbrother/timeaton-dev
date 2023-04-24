@@ -1,11 +1,12 @@
 {{ define "main" }}
-<article>
-    <h1>{{ .Title }}</h1>
+<article class="pt-2">
+    <h2> > {{ .Title }}</h2>
 
     {{ range .Pages.ByPublishDate.Reverse }}
-    <p>
-    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    </p>
+    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></h3>
+    {{ if .Params.description }}
+    <p class="text-grey-300 mt-0 ml-6">{{ .Description | markdownify }}</p>
+    {{ end }}
     {{ end }}
 </article>
 {{ end }}

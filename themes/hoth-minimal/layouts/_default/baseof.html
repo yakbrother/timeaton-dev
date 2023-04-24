@@ -11,10 +11,7 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    {{ $title := print .Site.Title " > " .Title }}
-    {{ if .IsHome }}{{ $title = "Home" }}{{ end }}
-    {{ . }}
-    <title>{{ $title }}</title>
+    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="keywords" content="developer, laravel, php, go, tim eaton, timothy eaton, blog">
     <meta name="author" content="Tim Eaton">
@@ -36,7 +33,7 @@
                 <h3 class="text-gray-700 text-right font-bold">Senior PHP Developer</h3>
 
                 <ul class="border-pink-200 border-t-4 mt-2 pt-4">
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="/posts">Blog</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/resume">Resume</a></li>
                 </ul>

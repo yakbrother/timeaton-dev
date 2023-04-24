@@ -1,7 +1,8 @@
 ---
 title: "Learning Go From a Hospital Bed"
-date: 2023-04-23T13:31:37+02:00
-draft: true
+date: 2023-04-20T13:31:37+02:00
+description: How I decided to start learning Go and setting up a plan for the first steps.
+draft: false
 ---
 
 I’ve always been fascinated by Go - mostly because I watched people work on it in co-working spaces and they always seemed to have fun with their jobs.  But never learned it or used it in my work. I figured - I’m stuck in a hospital bed. Why not go for it now?
