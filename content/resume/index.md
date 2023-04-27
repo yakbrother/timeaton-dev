@@ -10,7 +10,7 @@ I'm a back-end developer with 16+ years of professional experience. I'm very pas
 
 I have a good understanding of front-end development, but what I really love is working behind the scenes. I've worked extensively with Github, adapating legacy code to modern standards, and finding the right tools for any job. I love helping with connections between different company departments to make sure all needs are met and everyone is working happily and efficiently.
 
-> *Skills:* PHP, JavaScript, Python, Bash, MySQL,
+> **Skills:** PHP, JavaScript, Python, Bash, MySQL,
 > Modern CSS, Github, Linux and Unix, Laravel, Docker,
 > Deployment, Unit/Feature Testing, Basic design
 
