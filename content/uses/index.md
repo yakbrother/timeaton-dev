@@ -5,10 +5,23 @@ date: 2023-04-22T15:14:39+10:00
 ---
 
 ## Hardware
+16" 2021 Macbook Pro M1 with 32gb ram
+
 
 ## Editor
+VS Code most of the time
+Jellyfish theme
+Sublime Text and Vim for random edits
 
 ## Software
+Github
+Pixelmator Pro
+iTerm 2 with zsh
+Slack
+Transmit
+Trello
+TablePlus
+
 
 ## Away from Work
 
