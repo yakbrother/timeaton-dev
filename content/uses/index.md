@@ -5,7 +5,10 @@ date: 2023-04-22T15:14:39+10:00
 ---
 
 ## Hardware
-16" 2021 Macbook Pro M1 with 32gb ram
+Laptop: Macbook Pro (16-inch, 2021, Apple M1 Pro Chip, 32GB RAM)
+Keyboard: [Dygma Raise](https://www.dygma.com/raise/)
+Mouse: Logitech Wireless Mouse M320
+Wireless headphones: AirPods Pro, Sony WH-1000XM4
 
 
 ## Editor
@@ -21,6 +24,11 @@ Slack
 Transmit
 Trello
 TablePlus
+Calendar: Fantastical
+Email: Spark
+Launcher: Raycast
+Password manager: 1Password
+Writing: Ulysses
 
 
 ## Away from Work
