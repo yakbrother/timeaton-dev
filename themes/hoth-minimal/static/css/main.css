@@ -39,11 +39,16 @@ sidebar li a {
 
 a {
     color: #C026D3;
+    background-image: linear-gradient(#eee 0 0);
+    background-size: 0;
+    background-repeat: no-repeat;
     text-decoration: none;
+    transition: .4s;
 }
 
 a:hover {
     color: #C026D3;
+    background-size: 100%;
     text-decoration: underline;
 }
 
