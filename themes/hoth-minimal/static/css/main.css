@@ -39,6 +39,7 @@ sidebar li a {
 
 a {
     color: #C026D3;
+    padding: 0 0.25rem;
     background-image: linear-gradient(#eee 0 0);
     background-size: 0;
     background-repeat: no-repeat;
@@ -107,7 +108,7 @@ article h2 a,
 article h2 a:visited,
 article h3 a,
 article h3 a:visited {
-    color: #666;
+    color: #333;
 }
 
 
