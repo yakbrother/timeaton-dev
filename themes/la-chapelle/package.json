@@ -1,0 +1,16 @@
+{
+  "name": "winter-coat",
+  "version": "1.0.0",
+  "description": "Theme for www.yakdrive.io",
+  "main": "index.js",
+  "scripts": {
+    "build-tw": "npx tailwindcss -i ./static/css/main.css -o ./static/css/styles.css",
+    "watch-tw": "npx tailwindcss -i ./static/css/main.css -o ./static/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "Tim Eaton",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}

@@ -1,0 +1,137 @@
+html,
+body {
+    background-color: white;
+    color: #666;
+    line-height: 1.5em;
+}
+
+body {
+    background: url(/images/background.jpg) no-repeat center top fixed;
+    background-size: 100% auto;
+    margin: 0;
+}
+
+p,
+div,
+article,
+section,
+li {
+    font-family: 'Karla', sans-serif;
+    color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+sidebar li {
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 700;
+}
+
+sidebar h1 {
+    letter-spacing: 3px;
+}
+
+sidebar li a {
+    color: #666;
+}
+
+a {
+    color: #C026D3;
+    padding: 0 0.25rem;
+    background-image: linear-gradient(#eee 0 0);
+    background-size: 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover {
+    color: #C026D3;
+    background-size: 100%;
+    text-decoration: underline;
+}
+
+.front-layout {
+    max-width: 900px;
+}
+
+article h1,
+sidebar h1 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 0.67em;
+}
+
+article h2,
+sidebar h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0.81em;
+}
+
+article h3,
+sidebar h3 {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+article p {
+    margin-top: .8em;
+    line-height: 2em;
+}
+
+article ol,
+article ul {
+    margin-top: .8em;
+    margin-left: 1em;
+}
+
+article a {
+    color: #C026D3;
+}
+
+article a:visited {
+    color: #C026D3;
+}
+
+article blockquote {
+    margin-top: 1em;
+    border-left: 4px solid #666;
+    padding: 6px 6px 15px 12px;
+    background: #fff5f7;
+}
+
+article h2 a,
+article h2 a:visited,
+article h3 a,
+article h3 a:visited {
+    color: #333;
+}
+
+
+article h2 a:hover,
+article h3 a:hover {
+    color: #C026D3;
+}
+
+article pre {
+    margin: 0 1em 1em 1em;
+    overflow: auto;
+    white-space: pre-wrap;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background-color: #fafafa;
+    --tw-text-opacity: 1;
+    color: #60136a;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+
+pre code {
+    font-size: 80%;
+}
