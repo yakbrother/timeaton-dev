@@ -2,11 +2,11 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 # TODO
-name = "Hoth Minimal"
+name = "La Chapelle"
 license = "MIT"
 licenselink = ""
-description = "A design for timeaton.dev"
-homepage = "http://example.com/"
+description = "A dark design for timeaton.dev"
+homepage = "http://timeaton.dev/"
 tags = []
 features = []
 min_version = "0.41.0"

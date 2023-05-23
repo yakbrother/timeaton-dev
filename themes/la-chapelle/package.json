@@ -1,5 +1,5 @@
 {
-  "name": "winter-coat",
+  "name": "la-chapelle",
   "version": "1.0.0",
   "description": "Theme for www.yakdrive.io",
   "main": "index.js",
@@ -9,8 +9,5 @@
   },
   "keywords": [],
   "author": "Tim Eaton",
-  "license": "MIT",
-  "devDependencies": {
-    "tailwindcss": "^3.3.1"
-  }
+  "license": "MIT"
 }

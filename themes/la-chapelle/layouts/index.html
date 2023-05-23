@@ -4,9 +4,12 @@
 
     <h2>Recent Posts:</h2>
 
-    {{- range ( where site.RegularPages "Section" "posts" | first 10 ) }}
-    <div>
+    {{- range ( where site.RegularPages "Section" "posts" | first 20 ) }}
+    <div class="card-blog">
         <h3 class="font-bold ml-6"><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></h3>
+        {{ if .Params.description }}
+        {{ .Description | markdownify }}
+        {{ end }}
     </div>
     {{ end }}
 
