@@ -5,7 +5,7 @@
     <h2>Recent Posts:</h2>
 
     {{- range ( where site.RegularPages "Section" "posts" | first 10 ) }}
-    <div>
+    <div class="recent-posts">
         <h3 class="font-bold ml-6"><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></h3>
     </div>
     {{ end }}

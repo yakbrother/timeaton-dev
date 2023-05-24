@@ -2,16 +2,22 @@
 <article class="pt-3">
     {{ .Content}}
 
-    <h2>Recent Posts:</h2>
+    <p class="contact-me">
+        My inbox <a href="mailto:tim@timeaton.dev">is always open</a>! Feel free to check out my resume if you are looking for a developer currently.
+        <span><button href="mailto:tim@timeaton.dev">tim@timeaton.dev</button></span>
+    </p>
 
-    {{- range ( where site.RegularPages "Section" "posts" | first 20 ) }}
-    <div class="card-blog">
-        <h3 class="font-bold ml-6"><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></h3>
-        {{ if .Params.description }}
-        {{ .Description | markdownify }}
+    <h2>Recent Posts</h2>
+    <section class="recent-posts">
+        {{- range ( where site.RegularPages "Section" "posts" | first 20 ) }}
+        <div class="card-blog">
+            <h3 class="font-bold ml-6"><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></h3>
+            {{ if .Params.description }}
+            {{ .Description | markdownify }}
+            {{ end }}
+        </div>
         {{ end }}
-    </div>
-    {{ end }}
+    </section>
 
 </article>
 

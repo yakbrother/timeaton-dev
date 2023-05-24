@@ -1,15 +1,14 @@
 html,
 body {
-    background: rgb(10,25,47);
-    background: radial-gradient(at bottom left, rgba(10,25,47,1) 0%, rgba(42,63,95,1) 85%);
-    color: #dae6f7;
-    line-height: 1.7em;
-    margin: 0;
+    background-color: white;
+    color: #666;
+    line-height: 1.5em;
 }
 
 body {
-    /* background: url(/images/background.jpg) no-repeat center top fixed; */
-    /* background-size: 100% auto; */
+    background: url(/images/background.jpg) no-repeat center top fixed;
+    background-size: 100% auto;
+    margin: 0;
 }
 
 p,
@@ -18,6 +17,7 @@ article,
 section,
 li {
     font-family: 'Karla', sans-serif;
+    color: #333333;
 }
 
 h1,
@@ -29,48 +29,18 @@ sidebar li {
     font-weight: 700;
 }
 
-.wrapper {
-    max-width: 760px;
-    margin: auto;
-    padding: 24px;
+sidebar h1 {
+    letter-spacing: 3px;
 }
 
-header {
-    padding-top: 2em;
-    padding-bottom: 4em;
-    display: flex;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-    font-family: 'Bangers', 'Spline Sans Mono', monospace;
-    letter-spacing: .2em;
-    text-align: left;
-    justify-content: left;
-    flex-grow: 1;
-}
-
-header a {
-    margin: 0;
-    text-align: left;
-    justify-content: left;
-    flex-grow: 1;
-}
-
-header li {
-    display: inline;
-    margin-left: 24px;
-}
-
-header li a {
-    padding: 0.25em 0.5em;
+sidebar li a {
+    color: #666;
 }
 
 a {
-    color: #e190eb;
+    color: #C026D3;
     padding: 0 0.25rem;
-    background-image: linear-gradient(#dae6f7 0 0);
+    background-image: linear-gradient(#eee 0 0);
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -78,7 +48,7 @@ a {
 }
 
 a:hover {
-    color: #e190eb;
+    color: #C026D3;
     background-size: 100%;
     text-decoration: underline;
 }
@@ -111,7 +81,6 @@ sidebar h3 {
 
 article p {
     margin-top: .8em;
-    line-height: 2em;
 }
 
 article ol,
@@ -121,11 +90,11 @@ article ul {
 }
 
 article a {
-    color: #e190eb;
+    color: #C026D3;
 }
 
 article a:visited {
-    color: #e190eb;
+    color: #C026D3;
 }
 
 article blockquote {
@@ -139,13 +108,13 @@ article h2 a,
 article h2 a:visited,
 article h3 a,
 article h3 a:visited {
-    color: inherit;
+    color: #333;
 }
 
 
 article h2 a:hover,
 article h3 a:hover {
-    color: #e190eb;
+    color: #C026D3;
 }
 
 article pre {
@@ -164,16 +133,4 @@ article pre {
 
 pre code {
     font-size: 80%;
-}
-
-.decoration {
-    /* background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); */
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    height: 5px;
-}
-
-.card-blog {
-    padding: 1em;
-    background: linear-gradient(to right top, #3a0b3f 0%, #d57eeb 100%);
-    border-radius: 25%;
 }
