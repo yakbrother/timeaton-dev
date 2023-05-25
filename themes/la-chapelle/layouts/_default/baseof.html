@@ -26,9 +26,11 @@
     <div class="decoration"></div>
     <div class="wrapper">
         <header>
+            <span>
                 <a href="/" class="pt-0">
                     <h1>Tim Eaton</h1>
                 </a>
+            </span>
             <ul>
                 <li><a href="/posts">Blog</a></li>
                 <li><a href="/resume">Resume</a></li>
@@ -36,8 +38,6 @@
                 <li><a href="/about">About</a></li>
             </ul>
         </header>
-        
-        {{- block "main" . }}{{- end }}
 
         <sidebar>
             <ul class="border-pink-100 border-t-4 mt-4 pt-4">
@@ -49,6 +49,8 @@
                 <li><a href="https://www.linkedin.com/in/tim-eaton-pluies">LinkedIn</a></li>
             </ul>
         </sidebar>
+        
+        {{- block "main" . }}{{- end }}
 
         <footer>
             <p>
