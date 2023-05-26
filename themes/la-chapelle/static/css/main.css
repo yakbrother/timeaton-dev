@@ -79,6 +79,7 @@ a:hover {
 }
 
 button {
+    margin: 0;
     color: #e190eb;
     border: 1px solid #e190eb;
     border-radius: 2em;
@@ -93,7 +94,11 @@ button {
 
 .contact-me button {
     display: block;
-    margin: auto;
+    margin: 0px auto;
+}
+
+.contact-me a {
+    margin: 0px;
 }
     
 button:hover {
@@ -184,8 +189,9 @@ pre code {
     height: 5px;
 }
 
-.recent-posts .date {
+.post-date {
     color: hsl(216.43, 12.96%, 42.35%);
+    font-weight: bold;
 }
 
 .recent-posts .title {
@@ -193,5 +199,22 @@ pre code {
 }
 
 footer {
+    padding-top: 2em;
+    text-align: center;
     color: hsl(216.43, 12.96%, 42.35%);
+    font-size: 90%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 1em;
+}
+
+footer p {
+    text-align: center;
 }
