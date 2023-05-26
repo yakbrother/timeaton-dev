@@ -1,15 +1,26 @@
 html,
 body {
-    background: rgb(10,25,47);
-    background: radial-gradient(at bottom left, rgba(10,25,47,1) 0%, rgba(42,63,95,1) 85%);
-    color: #dae6f7;
+    /* background: HSL(216, 65%, 11%);
+    color: hsl(	215, 64%, 91%); */
+    background: hsl(0, 0%, 9%);
+    background: radial-gradient(at bottom left, hsl(0, 0%, 9%) 50%, hsl(0, 0%, 27.08%) 95%);
+    color: hsl(35, 58%, 85%);
     line-height: 1.7em;
     margin: 0;
 }
 
-body {
-    /* background: url(/images/background.jpg) no-repeat center top fixed; */
-    /* background-size: 100% auto; */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper article {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 p,
@@ -62,10 +73,15 @@ header li a {
     padding: 0.25em 0.5em;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 a {
-    color: #e190eb;
+    color: hsl(293, 69%, 74%);
     padding: 0 0.25rem;
-    background-image: linear-gradient(rgb(79, 95, 117) 0 0);
+    background-image: linear-gradient(hsl(215, 19%, 38%) 0 0);
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -73,19 +89,19 @@ a {
 }
 
 a:hover {
-    color: #e190eb;
+    color: hsl(293, 69%, 74%);
     background-size: 100%;
     text-decoration: underline;
 }
 
 button {
     margin: 0;
-    color: #e190eb;
-    border: 1px solid #e190eb;
+    color: hsl(293, 69%, 74%);
+    border: 1px solid hsl(293, 69%, 74%);
     border-radius: 2em;
     padding: .5rem 2rem;
     background: none;
-    background-image: linear-gradient(rgb(79, 95, 117) 0 0);
+    background-image: linear-gradient(hsl(215, 19%, 38%) 0 0);
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -144,18 +160,18 @@ article ul {
 }
 
 article a {
-    color: #e190eb;
+    color: hsl(293, 69%, 74%);
 }
 
 article a:visited {
-    color: #e190eb;
+    color: hsl(293, 69%, 74%);
 }
 
 article blockquote, .contact-me {
     margin: 2em;
     padding: 1em;
-    border: 1px solid #dae6f7;
-    box-shadow: 2px 2px rgb(10,25,47), 3px 3px #dae6f7;
+    border: 1px solid hsl(215, 64%, 91%);
+    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px hsl(215, 64%, 91%);
 }
 
 article h2 a,
@@ -168,15 +184,15 @@ article h3 a:visited {
 
 article h2 a:hover,
 article h3 a:hover {
-    color: #e190eb;
+    color: hsl(293, 69%, 74%);
 }
 
 article pre {
     margin-top: 2em;
     margin-bottom: 2em;
     padding: 1em;
-    border: 1px solid #dae6f7;
-    box-shadow: 2px 2px rgb(10,25,47), 3px 3px #dae6f7;
+    border: 1px solid hsl(215, 64%, 91%);
+    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px hsl(215, 64%, 91%);
 }
 
 pre code {
@@ -184,8 +200,7 @@ pre code {
 }
 
 .decoration {
-    /* background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); */
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    background-image: linear-gradient(120deg, hsl(33, 95%, 78%) 0%, hsl(288, 73%, 71%) 100%);
     height: 5px;
 }
 
