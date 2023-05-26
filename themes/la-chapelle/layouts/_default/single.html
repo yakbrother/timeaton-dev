@@ -1,0 +1,9 @@
+{{ define "description" }}
+<meta name="description" content="{{ .Page.Params.description }}" />
+{{ end }}
+
+{{ define "main" }}
+<article>
+    {{ .Content }}
+</article>
+{{ end }}
