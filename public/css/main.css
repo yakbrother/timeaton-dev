@@ -1,14 +1,26 @@
 html,
 body {
-    background-color: white;
-    color: #666;
-    line-height: 1.5em;
+    /* background: HSL(216, 65%, 11%);
+    color: hsl(	215, 64%, 91%); */
+    background: hsl(0, 0%, 9%);
+    background: radial-gradient(at bottom left, hsl(0, 0%, 9%) 50%, hsl(0, 0%, 27.08%) 95%);
+    color: hsl(35, 58%, 85%);
+    line-height: 1.7em;
+    margin: 0;
 }
 
-body {
-    background: url(/images/background.jpg) no-repeat center top fixed;
-    background-size: 100% auto;
-    margin: 0;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper article {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 p,
@@ -17,7 +29,6 @@ article,
 section,
 li {
     font-family: 'Karla', sans-serif;
-    color: #333333;
 }
 
 h1,
@@ -29,18 +40,48 @@ sidebar li {
     font-weight: 700;
 }
 
-sidebar h1 {
-    letter-spacing: 3px;
+.wrapper {
+    max-width: 760px;
+    margin: auto;
+    padding: 24px;
 }
 
-sidebar li a {
-    color: #666;
+header {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    text-align: left;
+    justify-content: left;
+    flex-grow: 1;
+}
+header h1 {
+    margin: 0;
+    font-family: 'Bangers', 'Spline Sans Mono', monospace;
+    letter-spacing: .2em;
+}
+
+header li {
+    display: inline;
+    margin-left: 24px;
+}
+
+header li a {
+    padding: 0.25em 0.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 a {
-    color: #C026D3;
+    color: hsl(293, 69%, 74%);
     padding: 0 0.25rem;
-    background-image: linear-gradient(#eee 0 0);
+    background-image: linear-gradient(hsl(215, 19%, 38%) 0 0);
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -48,9 +89,37 @@ a {
 }
 
 a:hover {
-    color: #C026D3;
+    color: hsl(293, 69%, 74%);
     background-size: 100%;
     text-decoration: underline;
+}
+
+button {
+    margin: 0;
+    color: hsl(293, 69%, 74%);
+    border: 1px solid hsl(293, 69%, 74%);
+    border-radius: 2em;
+    padding: .5rem 2rem;
+    background: none;
+    background-image: linear-gradient(hsl(215, 19%, 38%) 0 0);
+    background-size: 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.contact-me button {
+    display: block;
+    margin: 0px auto;
+}
+
+.contact-me a {
+    margin: 0px;
+}
+    
+button:hover {
+    background-size: 100%;
+    text-decoration: none;
 }
 
 .front-layout {
@@ -91,47 +160,76 @@ article ul {
 }
 
 article a {
-    color: #C026D3;
+    color: hsl(293, 69%, 74%);
 }
 
 article a:visited {
-    color: #C026D3;
+    color: hsl(293, 69%, 74%);
 }
 
-article blockquote {
-    margin-top: 1em;
-    border-left: 4px solid #666;
-    padding: 6px 6px 15px 12px;
-    background: #fff5f7;
+article blockquote, .contact-me {
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid hsl(215, 64%, 91%);
+    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px hsl(215, 64%, 91%);
 }
 
 article h2 a,
 article h2 a:visited,
 article h3 a,
 article h3 a:visited {
-    color: #333;
+    color: inherit;
 }
 
 
 article h2 a:hover,
 article h3 a:hover {
-    color: #C026D3;
+    color: hsl(293, 69%, 74%);
 }
 
 article pre {
-    margin: 0 1em 1em 1em;
-    overflow: auto;
-    white-space: pre-wrap;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    background-color: #fafafa;
-    --tw-text-opacity: 1;
-    color: #60136a;
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
-    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid hsl(215, 64%, 91%);
+    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px hsl(215, 64%, 91%);
 }
 
 pre code {
-    font-size: 80%;
+    font-size: 90%;
+}
+
+.decoration {
+    background-image: linear-gradient(120deg, hsl(33, 95%, 78%) 0%, hsl(288, 73%, 71%) 100%);
+    height: 5px;
+}
+
+.post-date {
+    color: hsl(216.43, 12.96%, 42.35%);
+    font-weight: bold;
+}
+
+.recent-posts .title {
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 2em;
+    text-align: center;
+    color: hsl(216.43, 12.96%, 42.35%);
+    font-size: 90%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 1em;
+}
+
+footer p {
+    text-align: center;
 }

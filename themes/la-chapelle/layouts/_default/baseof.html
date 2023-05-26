@@ -26,9 +26,11 @@
     <div class="decoration"></div>
     <div class="wrapper">
         <header>
+            <span>
                 <a href="/" class="pt-0">
                     <h1>Tim Eaton</h1>
                 </a>
+            </span>
             <ul>
                 <li><a href="/posts">Blog</a></li>
                 <li><a href="/resume">Resume</a></li>
@@ -39,18 +41,15 @@
         
         {{- block "main" . }}{{- end }}
 
-        <sidebar>
-            <ul class="border-pink-100 border-t-4 mt-4 pt-4">
-                <li><a href="mailto:tim@timeaton.dev">Email</a></li>
-                <li><a href="/index.xml">RSS</a></li>
+        <footer>
+            <ul>
                 <li><a href="https://typo.social/@yakbrother">Mastodon</a></li>
                 <li><a href="https://github.com/yakbrother">Github</a></li>
                 <li><a href="https://twitter.com/yakbrother">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/in/tim-eaton-pluies">LinkedIn</a></li>
+                <li><a href="/index.xml">RSS</a></li>
+                <li><a href="mailto:tim@timeaton.dev">tim@timeaton.dev</a></li>
             </ul>
-        </sidebar>
-
-        <footer>
             <p>
                 &copy; 2023 Tim Eaton | <a href="/colophon">Colophon</a> | Hugo | AWS
             </p>
