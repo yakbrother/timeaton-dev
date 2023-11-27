@@ -1,5 +1,5 @@
 ---
-title: "Part-Job Found! Is it Time to Switch Careers?"
+title: "Part-Time Job Found! Is it Time to Switch Careers?"
 date: 2023-10-10T23:11:13Z
 draft: false
 description: Maybe there's more to life than vim and Linux...
