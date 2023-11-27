@@ -1,6 +1,6 @@
 ---
 title: "Part-Job Found! Is it Time to Switch Careers?"
-date: 2023-010-29T15:12:43+02:00
+date: 2023-10-29T15:12:43+02:00
 draft: false
 description: Maybe there's more to life than vim and Linux...
 ---
