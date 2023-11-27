@@ -5,6 +5,7 @@
     --color-link-bg: hsl(215, 19%, 38%);
 }
 
+/*
 @media (prefers-color-scheme: light) {
     :root {
         --color-bg: hsl(0, 0%, 97%);
@@ -13,6 +14,7 @@
         --color-link-bg: hsl(0, 0%, 88%);
     }
 }
+*/
   
 html,
 body {
