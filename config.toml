@@ -2,4 +2,4 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Tim Eaton'
 themesDir = "themes"
-theme = "la-chapelle"
+theme = "ninety-three-two"

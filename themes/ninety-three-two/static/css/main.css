@@ -1,0 +1,246 @@
+
+    :root {
+        --color-bg: hsl(0, 0%, 97%);
+        --color-bg-2: hsl(0, 0%, 98.08%);
+        --color-fg: hsl(65, 42%, 9%);
+        --color-link-bg: hsl(0, 0%, 88%);
+    }
+}
+  
+html,
+body {
+    /* background: HSL(216, 65%, 11%);
+    color: hsl(	215, 64%, 91%); */
+    background: hsl(0, 0%, 9%);
+    background: radial-gradient(at bottom left, var(--color-bg) 50%,  var(--color-bg-2) 95%);
+    color: var(--color-fg);
+    line-height: 1.7em;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper article {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+p,
+div,
+article,
+section,
+li {
+    font-family: 'Karla', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+sidebar li {
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 700;
+}
+
+.wrapper {
+    max-width: 760px;
+    margin: auto;
+    padding: 24px;
+}
+
+header {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    text-align: left;
+    justify-content: left;
+    flex-grow: 1;
+}
+header h1 {
+    margin: 0;
+    font-family: 'Bangers', 'Spline Sans Mono', monospace;
+    letter-spacing: .2em;
+}
+
+header li {
+    display: inline;
+    margin-left: 24px;
+}
+
+header li a {
+    padding: 0.25em 0.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: hsl(293, 69%, 74%);
+    padding: 0 0.25rem;
+    background-image: linear-gradient(var(--color-link-bg) 0 0);
+    background-size: 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover {
+    color: hsl(293, 69%, 74%);
+    background-size: 100%;
+    text-decoration: underline;
+}
+
+button {
+    margin: 0;
+    color: hsl(293, 69%, 74%);
+    border: 1px solid hsl(293, 69%, 74%);
+    border-radius: 2em;
+    padding: .5rem 2rem;
+    background: none;
+    background-image: linear-gradient(hsl(215, 19%, 38%) 0 0);
+    background-size: 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.contact-me button {
+    display: block;
+    margin: 0px auto;
+}
+
+.contact-me a {
+    margin: 0px;
+}
+    
+button:hover {
+    background-size: 100%;
+    text-decoration: none;
+}
+
+.front-layout {
+    max-width: 900px;
+}
+
+article h1,
+sidebar h1 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 0.67em;
+}
+
+article h2,
+sidebar h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0.81em;
+}
+
+article h3,
+sidebar h3 {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+article p {
+    margin-top: .8em;
+    line-height: 2em;
+}
+
+article ol,
+article ul {
+    margin-top: .8em;
+    margin-left: 1em;
+}
+
+article a {
+    color: hsl(293, 69%, 74%);
+}
+
+article a:visited {
+    color: hsl(293, 69%, 74%);
+}
+
+article blockquote, .contact-me {
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid var(--color-fg);
+    box-shadow: 2px 2px var(--color-bg), 3px 3px var(--color-fg);
+}
+
+article h2 a,
+article h2 a:visited,
+article h3 a,
+article h3 a:visited {
+    color: inherit;
+}
+
+
+article h2 a:hover,
+article h3 a:hover {
+    color: hsl(293, 69%, 74%);
+}
+
+article pre {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid var(--color-fg);
+    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px var(--color-fg);
+}
+
+pre code {
+    font-size: 90%;
+}
+
+.decoration {
+    background-image: linear-gradient(120deg, hsl(33, 95%, 78%) 0%, hsl(288, 73%, 71%) 100%);
+    height: 5px;
+}
+
+.post-date {
+    color: hsl(216.43, 12.96%, 42.35%);
+    font-weight: bold;
+}
+
+.recent-posts .title {
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 2em;
+    text-align: center;
+    color: hsl(216.43, 12.96%, 42.35%);
+    font-size: 90%;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 1em;
+}
+
+footer p {
+    text-align: center;
+}
