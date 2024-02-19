@@ -1,14 +1,37 @@
 {{ define "main" }}
-<article class="pt-3">
-    Dork!!!
+<section class="header">
+    <p class="introtext">
+        I've always been an autodidact, teaching myself to code, design, and write.
+        I love to improve my own efficiency and apply that skill to my work
+        to help fascilitate ideas and operations.
+        Right now, I'm looking for a new challenge to help business teams work better together and with
+        their clients. If you're interested, take a look around. <strong>Let's build something together!</strong>
+    </p>
+</section>                                              
+    <section class="contact">
 
     <p class="contact-me">
         My inbox is always open! Feel free to <a href="/resume">check out my resume</a> if you are looking for a developer, writer, or teacher currently.
         <a href="mailto:tim@timeaton.dev"><button>tim@timeaton.dev</button></a>
     </p>
+</section>                                              
 
+<section class="recent-posts">
+    <h2 style="margin-top: 3em;">My Methodology</h2>
+    
+<ol>
+<li>The most important aspect is learning what different departments and teams are being used, and how they communicate. This will influence an efficient way to grow ideas steadily, ethically, and quickly.</li>
+<li>If possible, review customer feedback and even talk to some customers. See if I can identify major desires their site for us to focus on in development or services.</li>
+<li>Start restructuring teams or tasks for maximum staff happiness and usefulness., building wireframes, roadmaps, and measures of success.</li>
+<ll>Help with aspects of building and critiquing th.e new features using my experience in design, US, and development.</li>
+<li>Continue a culture where all employees are praised for new ideas and given the opportunity to learn new skills.</li>
+<li>Write a case study for your benefit and how I can improve the process in the future.
+</ol>
+</section>
+
+<section class="recent-posts">
     <h2 style="margin-top: 3em;">Recent Posts</h2>
-    <section class="recent-posts">
+    
         {{- range ( where site.RegularPages "Section" "posts" | first 100 ) }}
             <p>
                 <span class="title"><a class="title" href="{{ .RelPermalink }}">{{ .Title }} ></a></span>
@@ -18,6 +41,5 @@
         {{ end }}
     </section>
 
-</article>
 
 {{ end }}

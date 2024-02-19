@@ -23,8 +23,9 @@
 </head>
 
 <body>
-    <div class="decoration"></div>
-    <div class="wrapper">
+    <div class="rainbow"></div>
+    <section class="top">
+        <div class="content-center"></div>
         <header>
             <span>
                 <a href="/" class="pt-0">
@@ -38,9 +39,14 @@
                 <li><a href="/about">About</a></li>
             </ul>
         </header>
+        </div>
+        </section>
         
         {{- block "main" . }}{{- end }}
 
+        
+        <section class="footer">
+            <div class="content-center">
         <footer>
             <ul>
                 <li><a href="https://typo.social/@yakbrother">Mastodon</a></li>
@@ -51,11 +57,12 @@
                 <li><a href="mailto:tim@timeaton.dev">tim@timeaton.dev</a></li>
             </ul>
             <p>
-                &copy; 2023 Tim Eaton | <a href="/colophon">Colophon</a> | Hugo | AWS
+                &copy; 2023 Tim Eaton | Hugo | AWS
             </p>
         </footer>
-    </div>
-    <div class="decoration"></div>
+        </div>
+    </section>
+    <div class="rainbow"></div>
 </body>
 
 </html>
