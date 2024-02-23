@@ -1,5 +1,6 @@
 {{ define "main" }}
 <section class="header">
+    <div class="content-center">
     <p class="introtext">
         I've always been an autodidact, teaching myself to code, design, and write.
         I love to improve my own efficiency and apply that skill to my work
@@ -7,16 +8,17 @@
         Right now, I'm looking for a new challenge to help business teams work better together and with
         their clients. If you're interested, take a look around. <strong>Let's build something together!</strong>
     </p>
+</div>
 </section>                                              
     <section class="contact">
-
+        <div class="content-center">
     <p class="contact-me">
         My inbox is always open! Feel free to <a href="/resume">check out my resume</a> if you are looking for a developer, writer, or teacher currently.
         <a href="mailto:tim@timeaton.dev"><button>tim@timeaton.dev</button></a>
-    </p>
+    </p></div>
 </section>                                              
 
-<section class="recent-posts">
+<section class="recent-posts"><div class="content-center">
     <h2 style="margin-top: 3em;">My Methodology</h2>
     
 <ol>
@@ -28,8 +30,11 @@
 <li>Write a case study for your benefit and how I can improve the process in the future.
 </ol>
 </section>
+</div>
+
 
 <section class="recent-posts">
+    <div class="content-center">
     <h2 style="margin-top: 3em;">Recent Posts</h2>
     
         {{- range ( where site.RegularPages "Section" "posts" | first 100 ) }}
@@ -39,6 +44,7 @@
                 {{ .Description | markdownify }}
             </p>
         {{ end }}
+    </div>
     </section>
 
 

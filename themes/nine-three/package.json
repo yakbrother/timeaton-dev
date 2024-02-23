@@ -1,7 +1,7 @@
 {
-  "name": "la-chapelle",
+  "name": "nine-three",
   "version": "1.0.0",
-  "description": "Theme for www.yakdrive.io",
+  "description": "Theme for www.timeaton.dev",
   "main": "index.js",
   "scripts": {
     "build-tw": "npx tailwindcss -i ./static/css/main.css -o ./static/css/styles.css",

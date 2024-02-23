@@ -27,10 +27,10 @@ body {
     margin: 0;
 }
 
-.wrapper {
+.wrapper-all {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    
 }
 
 .wrapper article {
@@ -58,10 +58,8 @@ sidebar li {
     font-weight: 700;
 }
 
-.wrapper {
-    max-width: 760px;
-    margin: auto;
-    padding: 24px;
+.wrapper-all {
+    min-height: 100vh;
 }
 
 header {
