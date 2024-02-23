@@ -5,7 +5,7 @@ draft: false
 description: Maybe there's more to life than vim and Linux...
 ---
 
-After about 9 months of looking - I found a job! It wasn't what I thought I would be doing. Instead I'm no longer a code money, but a business teacher in Rennes, France.
+After about 9 months of looking - I found a job! It wasn't what I thought I would be doing. Instead I'm no longer a code monkey, but a business teacher in Rennes, France.
 
 It was a random recommendation from a neighbor (a programmer) who also teaches there, and my main subject is IT budgeting for full-stack developers. I'm the only American in the school, and the administrators like having their students learn with a native English speaker. The first day was absolutely terrifying - but now I've tought three classes and I'm getting the hang of it. I teach in English, but joke in French with them. Honestly it's really amazing to see light bulbs go on in someone's head when they understand or have an idea to contribute.
 
