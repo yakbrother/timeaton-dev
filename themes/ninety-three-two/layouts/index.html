@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="rainbow decoration"></div>
 <section class="header">
     <div class="content-center">
     <p class="introtext">
@@ -18,9 +19,8 @@
     </p></div>
 </section>                                              
 
-<section class="methods glass-eye"><div class="content-center">
-    <h2 style="margin-top: 3em;">My Methodology</h2>
-    
+<section class="method glass-eye"><div class="content-center">
+    <h2>My Methodology</h2>    
 <ol>
 <li>The most important aspect is learning what different departments and teams are being used, and how they communicate. This will influence an efficient way to grow ideas steadily, ethically, and quickly.</li>
 <li>If possible, review customer feedback and even talk to some customers. See if I can identify major desires their site for us to focus on in development or services.</li>
@@ -36,7 +36,7 @@
 
 <section class="recent-posts glass-eye">
     <div class="content-center">
-    <h2 style="margin-top: 3em;">Recent Posts</h2>
+    <h2>Recent Posts</h2>
     
         {{- range ( where site.RegularPages "Section" "posts" | first 100 ) }}
             <p>

@@ -64,7 +64,7 @@ body {
     color: hsl(	215, 64%, 91%); 
     background: hsl(0, 0%, 9%);
     background: radial-gradient(at bottom left, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    color: var(--color-fg);
+    color: hsl(34, 86%, 22%);
     line-height: 1.7em;
     margin: 0;
     background: #bbefff;
@@ -102,16 +102,16 @@ section.contact {
 }
 
 section.methods {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 section.recent-posts {
-    
+    margin-bottom: 24px;
 }
 
 section.footer {
     background: hwb(27 3% 78%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow rgba(0, 0, 0, 0.35) 0px -5px 15px -15px;
     color: #C4DFDF; 
 }
 
@@ -125,8 +125,7 @@ section.footer {
     border: 1px solid rgba(255, 255, 255, 0.3);
     max-width: 760px;
     margin:auto;
-    padding-bottom: 24px;
-
+    margin-bottom: 24px;
     }    /** links **/
 
 header h1 {
@@ -145,7 +144,7 @@ header li {
 .content-center {
     max-width: 760px;
     margin: auto;
-    padding: 0px;
+    padding: 12px;
 }
 
 .wrapper-all {
@@ -201,7 +200,7 @@ img {
 a {
     color: hsl(27, 81%, 51%);
     padding: 0 0.25rem;
-    background-image: linear-gradient(var(--color-link-bg) 0 0);
+    background-image: linear-gradient(hsl(34, 86%, 22%) 0 0);
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -290,8 +289,8 @@ article a:visited {
 article blockquote, .contact-me {
     margin: 2em;
     padding: 1em;
-    border: 1px solid var(--color-fg);
-    box-shadow: 2px 2px var(--color-bg), 3px 3px var(--color-fg);
+    border: 1px solid hsl(34, 86%, 22%);
+    box-shadow: 2px 2px var(--color-bg), 3px 3px hsl(34, 86%, 22%);
 }
 
 article h2 a,
@@ -311,8 +310,8 @@ article pre {
     margin-top: 2em;
     margin-bottom: 2em;
     padding: 1em;
-    border: 1px solid var(--color-fg);
-    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px var(--color-fg);
+    border: 1px solid hsl(34, 86%, 22%);
+    box-shadow: 2px 2px hsl(216, 65%, 11%), 3px 3px hsl(34, 86%, 22%);
 }
 
 pre code {
