@@ -1,60 +1,17 @@
 :root {
-    --color-fg: hsl(34, 86%, 22%);
-/*  --color-bg: #007991;
-    --color-bg-2:#78ffd6;
-    --color-fg: hsl(34, 86%, 22%);
-    --color-link-bg: hsl(0, 0%, 88%);
-    --text--900: #002924;
-    --font--platform: Platform,sans-serif;
-    --2nd-primary--500: #288286;
-    --base--black: black;
-    --base--white: white;
-    --old--blue-ben: var(--primary--600);
-    --old--dark-blue-ben: var(--primary--900);
-    --container--large: 80rem;
-    --neutral--500: #f3f3f3;
-    --primary--600: #ff6635;
-    --primary--50: #fff4f0;
-    --base--off-white: #f7f9f2;
-    --text--600: #263f35;
-    --old--background-blue-ben: var(--primary--50);
-    --text--400: #7eb7a9;
-    --guide--border-radius: 1rem;
-    --flex-gap--small: 1rem;
-    --neutral--600: #e6e6e6;
-    --neutral--700: #a6a6a6;
-    --2nd-primary--100: #f2f7f8;
-    --container--small: 48rem;
-    --warning--300: #ff8d4f;
-    --old--middle-grey: var(--text--400);
-    --primary--400: #ff9370;
-    --success--600: #42aa1d;
-    --2nd-primary--400: #35a9b0;
-    --text--100: #e3f4e1;
-    --padding-global--desktop-horizontal: 2.5rem;
-    --padding-global--mobile-horizontal: 1.25rem;
-    --container--medium: 64rem;
-    --old--light-400-pink-ben: var(--2nd-primary--400);
-    --2nd-primary--600: #115f5a;
-    --2nd-primary--focused-ring: #cbe9eb;
-    --padding-global--desktop-vertical: 6rem;
-    --padding-global--mobile-vertical: 4rem;
-    --error--400: #f56451;
-    --error--100: #fff1f0;
-    --error--500: #e4321b;
-    --old--slate-grey: var(--neutral--700);
-    --guide--container-size: 50rem;
-    --old--background-blue-spacer: var(--primary--50);
-    --color--back-green: #002924;
-    --neutral--900: #595959;
-    --warning--100: #fff5f0;
-    --guide--margin-desktop: 3rem;
-    --guide--margin-mobile: 2.5rem;
-    --guide--anchor-scroll: -6rem;
-    --primary--900: #cc5833;
-    --error--700: #bd1904;
-    */
-}
+    --text-basic: hsl(34, 86%, 22%);
+    --color-link: hsl(293, 69%, 74%);
+    --color-link-background: hsl(293, 69%, 74%);
+    --color-link-background: #C4DFDF;
+    --color-post-date: hsl(216.43, 12.96%, 42.35%);
+    --blockquote-border: hsl(34, 86%, 22%);
+    --background-footer: hwb(27 3% 78%);
+    --shadow-footer: rgba(0, 0, 0, 0.5);
+    --top-text: #F9E8D9;
+    --top-background: #527853;
+    --shadow-header: rgba(0, 0, 0, 0.35);
+    --background-header: #F9E8D9;
+    --background-contact: #000000;
 
 
 
@@ -75,7 +32,7 @@ body {
 /** Colors **/
 
 .post-date {
-    color: hsl(216.43, 12.96%, 42.35%);
+    color: var(--color-posts-date);
 }
 
 div .rainbow {
@@ -86,19 +43,18 @@ div .rainbow {
 }
 
 section.top {
-    /* background:#ff4d00; */
-    color: #F9E8D9; 
-    background: #527853;
+    color: --var(--top-text)#F9E8D9; 
+    background:  --var(background-top)#527853;
 }
 
 section.header {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: #F9E8D9;
+    box-shadow: --var(shadow-header)rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: --var(background-header)#F9E8D9;
     opacity: 75%;
 }]
 
 section.contact {
-    background: black;
+    background: var(--background-contact)
 }
 
 section.methods {
@@ -110,9 +66,9 @@ section.recent-posts {
 }
 
 section.footer {
-    background: hwb(27 3% 78%);
-    box-shadow rgba(0, 0, 0, 0.35) 0px -5px 15px -15px;
-    color: #C4DFDF; 
+    box-shadow: 0px 0px 35px 0px var(--shadow-header);
+    background: var(--background-footer);
+    color: var(--background-footer); 
 }
 
 /** Glass-eye **/
@@ -126,7 +82,15 @@ section.footer {
     max-width: 760px;
     margin:auto;
     margin-bottom: 24px;
-    }    /** links **/
+    }
+
+    .glass-eye h2 {
+        background: rgba(255, 255, 255, 0.25);
+    }
+    
+    
+    
+/** links **/
 
 header h1 {
     margin: 0;
@@ -208,19 +172,20 @@ a {
 }
 
 a:hover {
-    color: hsl(293, 69%, 74%);
+    color: var(color-link);
     background-size: 100%;
     text-decoration: underline;
 }
 
 button {
     margin: 0;
-    color: hsl(293, 69%, 74%);
-    border: 1px solid hsl(293, 69%, 74%);
+    color: var(--color-link);
+    border: 1px solid car(--color-link);
     border-radius: 2em;
     padding: .5rem 2rem;
     background: none;
-    background-image: linear-gradient(hsl(215, 19%, 38%) 0 0);
+    /* TODO Fix Button BG */
+    /* background-image: linear-gradient(hsl(215, 19%, 38%) 0 0); */
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -279,17 +244,17 @@ article ul {
 }
 
 article a {
-    color: hsl(293, 69%, 74%);
+    color: var(--color-link);
 }
 
 article a:visited {
-    color: hsl(293, 69%, 74%);
+    color: var(--color-link)
 }
 
 article blockquote, .contact-me {
     margin: 2em;
     padding: 1em;
-    border: 1px solid hsl(34, 86%, 22%);
+    border: 1px solid var(--blockquote-border);
     box-shadow: 2px 2px var(--color-bg), 3px 3px hsl(34, 86%, 22%);
 }
 
@@ -303,7 +268,7 @@ article h3 a:visited {
 
 article h2 a:hover,
 article h3 a:hover {
-    color: hsl(293, 69%, 74%);
+    color: var(--color-link);
 }
 
 article pre {
