@@ -1,91 +1,98 @@
 :root {
-    --text-basic: hsl(34, 86%, 22%);
-    --color-link: hsl(293, 69%, 74%);
-    --color-link-background: hsl(293, 69%, 74%);
-    --color-link-background: #C4DFDF;
-    --color-post-date: hsl(216.43, 12.96%, 42.35%);
+    
+    --text-basic: hsl(356, 44%, 65%);
+    --bg-basic: hsl(356, 44%, 65%);
+    --text-link: hsl(165, 44%, 35%);
+    --bg-link-background: #C4DFDF;
+    --text-hover: hsl(194, 31%, 54%);
+    --text-hover-background: hsl(11, 85%, 75%);
+    --color-post-date: hsl(357, 44%, 65%);
     --blockquote-border: hsl(34, 86%, 22%);
-    --background-footer: hwb(27 3% 78%);
+    --bg-footer: hsl(226, 4%, 29%);
     --shadow-footer: rgba(0, 0, 0, 0.5);
-    --top-text: #F9E8D9;
-    --top-background: #527853;
-    --shadow-header: rgba(0, 0, 0, 0.35);
-    --background-header: #F9E8D9;
-    --background-contact: #000000;
-
+    --text-top: hsl(225, 96%, 85%);
+    --bg-top:  hsl(201, 91%, 31%);
+    --header-shadow: rgba(0, 0, 0, 0.35);
+    --bg-header: hsl(225, 96%, 85%);
+    --bg-contact: hsl(225, 96%, 85%);
+    --text-glass-header: rgba(252, 240, 234, 0.15);
+    --bg-glass-header: rgba(86, 88, 114, 0.15);
+    --text-glass: rgba(86, 88, 114, 0.15);
+    --bg-glass: rgba(252, 240, 234, 0.15);
+}
 
 
 html,
 body {
-    /* background: HSL(216, 65%, 11%);
-    color: hsl(	215, 64%, 91%); 
-    background: hsl(0, 0%, 9%);
-    background: radial-gradient(at bottom left, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    color: hsl(34, 86%, 22%);
+    color: var(--text-basic);
     line-height: 1.7em;
     margin: 0;
-    background: #bbefff;
-    background-image: radial-gradient(at 90.0% 53.0%, hsl(197, 68%, 52%) 0px, transparent 50%),radial-gradient(at 34.0% 11.0%, hsl(222, 98%, 69%) 0px, transparent 50%),radial-gradient(at 50.0% 17.0%, hsl(21, 15%, 59%) 0px, transparent 50%),radial-gradient(at 91.0% 16.0%, hsl(105, 89%, 59%) 0px, transparent 50%),radial-gradient(at 33.0% 76.0%, hsl(203, 97%, 69%) 0px, transparent 50%);
-    background-blend-mode: overlay, screen, color-burn, screen, normal;
+    background: #CC95C0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* min-height: 100vh;
+    /*background-blend-mode: overlay, screen, color-burn, screen, normal;
 }
 
 /** Colors **/
 
 .post-date {
-    color: var(--color-posts-date);
+    padding: 12px;
+    color: var(--color-post-date);
 }
 
 div .rainbow {
+    background: #000000;
 	background-image: -webkit-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
 	background-image: -moz-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5)); 
 	background-image: -ms-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
 	background-image: -o-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
-}
-
-section.top {
-    color: --var(--top-text)#F9E8D9; 
-    background:  --var(background-top)#527853;
+    color: var(--top-text);
 }
 
 section.header {
-    box-shadow: --var(shadow-header)rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: --var(background-header)#F9E8D9;
+    box-shadow: var(--header-shadow) 0px 5px 15px;
+    background: var(--bg-header);
     opacity: 75%;
-}]
+}
 
 section.contact {
-    background: var(--background-contact)
+    background: var(--bg-contact)
 }
 
 section.methods {
-    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 section.recent-posts {
     margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 section.footer {
     box-shadow: 0px 0px 35px 0px var(--shadow-header);
-    background: var(--background-footer);
-    color: var(--background-footer); 
+    background: var(--bg-footer);
+    color: var(--bg-footer); 
 }
 
 /** Glass-eye **/
 .glass-eye {
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--bg-glass);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     max-width: 760px;
-    margin:auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin: auto;
     margin-bottom: 24px;
     }
 
     .glass-eye h2 {
-        background: rgba(255, 255, 255, 0.25);
+        background: var(--bg-glass-header);
+        color: var(--text-glass-header);
     }
     
     
@@ -94,7 +101,7 @@ section.footer {
 
 header h1 {
     margin: 0;
-    font-family: 'Bangers', 'Spline Sans Mono', monospace;
+    font-family: 'Slackside One', 'Bangers', monospace;
     letter-spacing: .2em;
 }
 
@@ -139,7 +146,7 @@ div,
 article,
 section,
 li {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -180,7 +187,7 @@ a:hover {
 button {
     margin: 0;
     color: var(--color-link);
-    border: 1px solid car(--color-link);
+    border: 1px solid var(--color-link);
     border-radius: 2em;
     padding: .5rem 2rem;
     background: none;
@@ -285,8 +292,9 @@ pre code {
 
 .decoration {
     height: 5px;
+    background: #000000;
 }
-
+å
 .post-date {
     font-weight: bold;
 }
