@@ -27,21 +27,37 @@ body {
     color: var(--text-basic);
     line-height: 1.7em;
     margin: 0;
-    background: #CC95C0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* min-height: 100vh;
-    /*background-blend-mode: overlay, screen, color-burn, screen, normal;
+    background: #CC95C0;  
+    min-height: 100vh;
+    
+    
 }
 
 /** Colors **/
+
+.decoration-top {
+    background: #847d89;
+    background: linear-gradient(to bottom #847d89 0 5%, 
+        #b2c6d6 5% 10%,
+        #847d89 10% 15%,
+        #fffcdc 15% 25%,
+        #847d89 25% 30%,
+        #DBD4B4 30% 35%,
+        #847d89 35% 40%,
+        #CC95C0 40% 55%,
+        #847d89 55%, 60%,
+        #d9a7c7 60% 80%,
+        #847d89 80% 10%);
+        min-height: 200px;
+
+}
 
 .post-date {
     padding: 12px;
     color: var(--color-post-date);
 }
 
-div .rainbow {
+div .plrainbow {
     background: #000000;
 	background-image: -webkit-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
 	background-image: -moz-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5)); 
@@ -172,10 +188,11 @@ a {
     color: hsl(27, 81%, 51%);
     padding: 0 0.25rem;
     background-image: linear-gradient(hsl(34, 86%, 22%) 0 0);
+    border-radius: 6px;
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
-    transition: .4s;
+    transition: .35s;
 }
 
 a:hover {
@@ -191,7 +208,6 @@ button {
     border-radius: 2em;
     padding: .5rem 2rem;
     background: none;
-    /* TODO Fix Button BG */
     /* background-image: linear-gradient(hsl(215, 19%, 38%) 0 0); */
     background-size: 0;
     background-repeat: no-repeat;
@@ -262,6 +278,7 @@ article blockquote, .contact-me {
     margin: 2em;
     padding: 1em;
     border: 1px solid var(--blockquote-border);
+    border-radius: 6px;
     box-shadow: 2px 2px var(--color-bg), 3px 3px hsl(34, 86%, 22%);
 }
 
