@@ -30,9 +30,13 @@ body {
 .wrapper-all {
     display: flex;
     flex-direction: column;
+    
+}
+
+wrapper-all {
     max-width: 790px;
     margin: auto;
-    padding: 0'
+    padding: 0;
     
 }
 
